@@ -13,7 +13,7 @@ foreach ($packages as $package) {
     $poids = $package[1];
     $volume = $package[2];
 
-    if ($poids >= 10 && $volume > 68000) {
+    if ($poids >= 10 || $volume > 68000) {
         $specialPackages[] = $expediteur;
     } else {
         $standardPackages[] = $expediteur;
@@ -21,10 +21,10 @@ foreach ($packages as $package) {
 }
 
 if (!empty($specialPackages)) {
-    echo "Special: " . implode(", ", $specialPackages) . "\n";
+    echo "Special: " . implode(", ", $specialPackages) . "<br>";
 }
 
 if (!empty($standardPackages)) {
-    echo "Standard: " . implode(", ", $standardPackages) . "\n";
+    echo "Standard: " . implode(", ", $standardPackages) . "<br>";
 }
 ?>

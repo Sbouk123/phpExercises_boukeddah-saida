@@ -4,5 +4,4 @@ $quantity = 12;
 
 $total = $price * $quantity;
 
-echo "Total : " . $total;
-?>
+echo $total;
