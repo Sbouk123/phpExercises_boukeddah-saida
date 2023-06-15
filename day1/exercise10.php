@@ -1,5 +1,5 @@
 <?php
-$packages = [["Amazon", 20, 45000], ["Cdiscount", 8, 192000], ["Etsy", 4, 68000]];
+$packages = array(["Amazon", 20, 45000], ["Cdiscount", 8, 192000], ["Etsy", 4, 68000]);
 
 foreach ($packages as $package) {
   $name = $package[0];

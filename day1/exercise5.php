@@ -7,3 +7,4 @@ while ($i < strlen($str)) {
   $i += 2;
 }
 ?>
+
