@@ -11,4 +11,8 @@
      return $average;
  }
 
+ $nbArray = [75, 80, 90, 95, 85];
+ $averageArray = averageCalc($nbArray);
+ 
+ echo "La moyenne des éléments du tableau est : $averageArray";
  ?>
